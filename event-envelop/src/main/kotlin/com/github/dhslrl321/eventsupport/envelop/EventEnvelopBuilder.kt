@@ -1,7 +1,10 @@
 package com.github.dhslrl321.eventsupport.envelop
 
 /**
- * Creator of EventEnvelop
+ * Builder of EventEnvelop
+ * This creates instance and build envelop state.
+ *
+ * @property id is not provided, use uuid by default
  */
 class EventEnvelopBuilder<T> {
     private var id: EventId<String> = EventId.uuidId()

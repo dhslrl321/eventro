@@ -1,7 +1,5 @@
 package com.github.dhslrl321.eventsupport.envelop
 
-import com.github.dhslrl321.eventsupport.envelop.EventEnvelop
-import com.github.dhslrl321.eventsupport.envelop.InsufficientEventEnvelopException
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.StringSpec
 

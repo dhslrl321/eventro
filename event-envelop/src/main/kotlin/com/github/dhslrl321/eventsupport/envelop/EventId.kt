@@ -7,7 +7,7 @@ import java.util.*
  *
  * used for identifying, idempotent key
  */
-class EventId<T>(
+data class EventId<T>(
     val value: T
 ) {
     companion object {
