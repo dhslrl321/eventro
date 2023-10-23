@@ -1,4 +1,4 @@
-package com.github.dhslrl321.eventsupport
+package com.github.dhslrl321.eventsupport.envelop
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
@@ -10,6 +10,8 @@ class EventEnvelopTest : StringSpec({
     val actual = EventEnvelop
         .builder<Foo>()
         .payload(Foo("A", "Hello"))
+        .eventVersion("0.1.0")
+        .eventType("FooEvent")
         .build()
 
     "must be same type and data of payload input" {
@@ -23,6 +25,14 @@ class EventEnvelopTest : StringSpec({
 
     "event unique id must be exists" {
         actual.id shouldNotBe null
+    }
+
+    "event has eventType" {
+        actual.eventType shouldBe "FooEvent"
+    }
+
+    "event has version" {
+        actual.eventVersion shouldBe "0.1.0"
     }
 })
 
