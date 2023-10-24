@@ -1,4 +1,4 @@
-rootProject.name = "event-support"
+rootProject.name = "eventro"
 
 include("event-envelop")
 include("event-serdes")

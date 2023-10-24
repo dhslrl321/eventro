@@ -1,4 +1,4 @@
-package com.github.dhslrl321.eventsupport.envelop
+package com.github.dhslrl321.eventro.envelop
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
@@ -7,8 +7,7 @@ import io.kotest.matchers.types.shouldBeInstanceOf
 
 class EventEnvelopTest : StringSpec({
 
-    val actual = EventEnvelop
-        .builder<Foo>()
+    val actual = EventEnvelop.builder<Foo>()
         .payload(Foo("A", "Hello"))
         .eventVersion("0.1.0")
         .eventType("FooEvent")

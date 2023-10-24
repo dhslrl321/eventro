@@ -1,4 +1,4 @@
-package com.github.dhslrl321.eventsupport.serdes
+package com.github.dhslrl321.eventro.serdes
 
 class SerdesException(
     errorMessage: String

@@ -1,4 +1,4 @@
-# Event Support
+# eventro
 
 This library may support building event driven architecture by **providing** below
 

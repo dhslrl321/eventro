@@ -1,7 +1,7 @@
-package com.github.dhslrl321.eventsupport.envelop
+package com.github.dhslrl321.eventro.envelop
 
-import com.github.dhslrl321.eventsupport.serdes.EventDeserializer
-import com.github.dhslrl321.eventsupport.serdes.EventSerializer
+import com.github.dhslrl321.eventro.serdes.EventDeserializer
+import com.github.dhslrl321.eventro.serdes.EventSerializer
 import java.time.Instant
 
 /**

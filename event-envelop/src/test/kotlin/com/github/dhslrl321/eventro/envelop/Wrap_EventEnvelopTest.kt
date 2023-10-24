@@ -1,4 +1,4 @@
-package com.github.dhslrl321.eventsupport.envelop
+package com.github.dhslrl321.eventro.envelop
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
