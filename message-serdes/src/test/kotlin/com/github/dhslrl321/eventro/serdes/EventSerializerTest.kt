@@ -5,14 +5,14 @@ import io.kotest.matchers.shouldBe
 
 class EventSerializerTest : StringSpec({
     "serialize to json" {
-        val actual = EventSerializer.serialize(Foo("jang", 10, mapOf("address" to "seoul")))
+        val actual = MessageSerializer.serialize(Foo("jang", 10, mapOf("address" to "seoul")))
 
         actual shouldBe
                 """{"name":"jang","age":10,"props":{"address":"seoul"}}"""
     }
 
     "just serialize string" {
-        val actual = EventSerializer.serialize("jang")
+        val actual = MessageSerializer.serialize("jang")
 
         actual shouldBe "\"jang\""
     }

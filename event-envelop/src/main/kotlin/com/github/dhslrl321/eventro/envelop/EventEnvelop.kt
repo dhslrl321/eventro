@@ -1,7 +1,7 @@
 package com.github.dhslrl321.eventro.envelop
 
-import com.github.dhslrl321.eventro.serdes.EventDeserializer
-import com.github.dhslrl321.eventro.serdes.EventSerializer
+import com.github.dhslrl321.eventro.serdes.MessageDeserializer
+import com.github.dhslrl321.eventro.serdes.MessageSerializer
 import java.time.Instant
 
 /**
@@ -22,7 +22,7 @@ data class EventEnvelop<T> internal constructor(
     val occurredAt: Instant = Instant.now()
 
     fun wrap(): String {
-        return EventSerializer.serialize(this)
+        return MessageSerializer.serialize(this)
     }
 
     companion object {
@@ -31,7 +31,7 @@ data class EventEnvelop<T> internal constructor(
         }
 
         inline fun <reified T> unwrap(wrapped: String): EventEnvelop<T> {
-            return EventDeserializer.deserialize<EventEnvelop<T>>(wrapped)
+            return MessageDeserializer.deserialize<EventEnvelop<T>>(wrapped)
         }
     }
 }

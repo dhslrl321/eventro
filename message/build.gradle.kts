@@ -21,7 +21,7 @@ repositories {
 
 dependencies {
 
-    api(project(":event-serdes"))
+    api(project(":message-serdes"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
