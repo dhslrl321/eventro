@@ -3,7 +3,7 @@
 This library may support building event driven architecture by **providing** below
 
 - **Message**
-  - MessageEnvelop
+  - **MessageEnvelop**
     - manage standardized message format. called [Envelop Wrapper Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/EnvelopeWrapper.html)
   - **Idempotent Key**
     - make safer for event message duplication consumption
